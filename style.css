@@ -1,0 +1,52 @@
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+#gameCanvas {
+    border: 1px solid #000;
+     background-color: black;
+} 
+
+#gameOver {
+    margin-top: -27%;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+
+@media screen and (max-width: 768px) {
+    #gameCanvas {
+        width: 100%; /* Full width for small screens */
+        height: auto; /* Adjust height proportionally */
+    }
+
+    #gameOver {
+        font-size: 16px; /* Slightly smaller font size for better readability on mobile */
+        margin-top: -20%;
+    }
+
+    .container {
+        padding: 15px; /* Add some padding around the container on small screens */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Make the title smaller for smaller screens */
+    }
+}
+
+/* Media query for very small screens (e.g., smartphones in portrait mode) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2em; /* Even smaller title */
+    }
+
+    #gameCanvas {
+        width: 90%; /* Slightly less than full width to avoid edge overflow */
+        height: 200px; /* Set a fixed height for very small screens */
+    }
+
+    #gameOver {
+        font-size: 14px; /* Smaller text for very small screens */
+    }
+}
